@@ -20,7 +20,7 @@ fn main() {
         .read_line(&mut unit)
         .expect("Failed to read line");
 
-    let input_type:String = unit.trim().parse().expect("Input not an number");
+    let input_type:String = unit.trim().parse().expect("Input not valid");
 
     // Asks for your temperature
     println!("Enter your Temperature");
