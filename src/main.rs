@@ -5,13 +5,8 @@ use std::process::exit;
 const FC:f32 = 5.0/9.0;
 const CF:f32 = 9.0/5.0;
 
-fn leave() -> i32 {
-    1
-}
-
 fn main() {
-    let exit_code = leave();
-    
+     
     // A question for if you are using f or c
     println!("Would you like to start from Farenheit or Celsius?");
     let mut unit = String::new();
@@ -47,7 +42,7 @@ fn main() {
             let pre_final:f32 = (start_temp - 32.0) * FC;
             let end_temp = pre_final as i32;
             println!("Celsius: {end_temp}");
-            exit(exit_code);
+            exit(1);
         }
     }
     let pre_final:f32 = start_temp * CF + 32.0;
